@@ -1,0 +1,14 @@
+{
+  "name": "beauty-store",
+  "version": "1.0.0",
+  "description": "Website bán mỹ phẩm",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "build": "echo 'No build needed for static site'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}
