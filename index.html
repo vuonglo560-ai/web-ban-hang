@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Store - Cửa hàng mỹ phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-heart"></i> Beauty Store</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#products">Sản phẩm</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Làm đẹp tự nhiên với mỹ phẩm chất lượng</h2>
+            <p>Khám phá bộ sưu tập mỹ phẩm cao cấp từ các thương hiệu uy tín</p>
+            <button class="cta-btn" onclick="scrollToProducts()">Mua sắm ngay</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Sản phẩm nổi bật</h2>
+            <div class="product-filters">
+                <button class="filter-btn active" data-category="all">Tất cả</button>
+                <button class="filter-btn" data-category="skincare">Chăm sóc da</button>
+                <button class="filter-btn" data-category="makeup">Trang điểm</button>
+                <button class="filter-btn" data-category="fragrance">Nước hoa</button>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Về chúng tôi</h2>
+            <p>Beauty Store cam kết mang đến những sản phẩm mỹ phẩm chất lượng cao, an toàn và hiệu quả. Chúng tôi tin rằng vẻ đẹp tự nhiên là điều quý giá nhất.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Liên hệ</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>0123 456 789</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@beautystore.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Đường ABC, Quận 1, TP.HCM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Giỏ hàng của bạn</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Tổng cộng: <span id="total-price">0</span>đ</strong>
+            </div>
+            <button class="checkout-btn">Thanh toán</button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="product-details"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Beauty Store. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>""
